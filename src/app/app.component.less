@@ -1,6 +1,5 @@
 .grid {
   display: grid;
-  grid-gap: 8px;
 }
 
 .fixedPosition {
@@ -19,10 +18,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.root {
+
+}
+
+#appRouterOutlet {
+}
+
 .sidebar {
   .fixedPosition();
   height: 100%;
-  padding: 8px;
   width: fit-content;
   min-width: 10%;
   display: flex;
@@ -47,7 +52,22 @@ a {
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
-  padding: 8px;
+  padding: 12px 8px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+a:hover {
+  background-color: #FFF8E1; 
+}
+
+.linkActive {
+  background-color: #FFF8E1; 
+}
+
+a span {
+  margin-left: 8px;
 }
 
 .titleLogoContainer {

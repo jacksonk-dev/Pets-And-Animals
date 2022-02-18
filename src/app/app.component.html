@@ -1,24 +1,46 @@
 <!-- Toolbar -->
 <div id="root">
-  <div class="titleLogoContainer">
-    <img
-      width="40"
-      alt="Logo"
-      src="..\assets\images\logo.png"
-    />
-    <h1>Pets & Animals</h1>
+  <div>
+    <div class="titleLogoContainer">
+      <img
+        width="40"
+        alt="Logo"
+        src="..\assets\images\logo.png"
+      />
+      <h1>Pets & Animals</h1>
+    </div>
+    <div class="sidebar">
+      <div class="businessLinks">
+        <a routerLink="/pets" routerLinkActive="linkActive">
+          <mat-icon aria-hidden="false" aria-label="Home Icon">pets</mat-icon>
+          <span>Pets</span>
+        </a>
+        <a routerLink="/roast" routerLinkActive="linkActive">
+          <mat-icon aria-hidden="false" aria-label="Home Icon">local_dining</mat-icon>
+          <span>Roast</span>
+        </a>
+        <a routerLink="/animals" routerLinkActive="linkActive">
+          <mat-icon aria-hidden="false" aria-label="Home Icon">cruelty_free</mat-icon>
+          <span>Live Animals</span>
+        </a>
+        <a routerLink="/animal-feeds" routerLinkActive="linkActive">
+          <mat-icon aria-hidden="false" aria-label="Home Icon">grass</mat-icon>
+          <span>Animal Feeds</span>
+        </a>
+        <a routerLink="/vet-services" routerLinkActive="linkActive">
+          <mat-icon aria-hidden="false" aria-label="Home Icon">medical_services</mat-icon>
+          <span>Vet Services</span>
+        </a>
+      </div>
+      <div class="settings">
+        <a routerLink="/settings" routerLinkActive="linkActive">
+          <mat-icon aria-hidden="false" aria-label="Home Icon">settings</mat-icon>
+          <span>Settings</span>
+        </a>
+      </div>
+    </div>
   </div>
-  <div class="sidebar">
-    <div class="businessLinks">
-      <a href="#">Pets</a>
-      <a href="#">Roast</a>
-      <a href="#">Live Animals</a>
-      <a href="#">Animal Feeds</a>
-      <a href="#">Vet Services</a>
-    </div>
-    <div class="settings">
-      <a href="#">Settings</a>
-    </div>
+  <div id="appRouterOutlet">
+    <router-outlet></router-outlet>
   </div>
 </div>
-<router-outlet></router-outlet>
