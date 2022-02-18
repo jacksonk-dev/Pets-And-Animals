@@ -18,18 +18,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.root {
-
-}
-
 #appRouterOutlet {
+  .fixedPosition();
+  top: 50px;
+  margin-left: 200px;
+  height: 100vh;
 }
 
 .sidebar {
   .fixedPosition();
-  height: 100%;
-  width: fit-content;
-  min-width: 10%;
+  height: 100vh;
+  width: 160px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
