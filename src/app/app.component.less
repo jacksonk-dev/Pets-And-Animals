@@ -21,8 +21,11 @@
 #appRouterOutlet {
   .fixedPosition();
   top: 50px;
-  margin-left: 200px;
+  margin-left: 160px;
+  padding: 0 16px;
   height: 100vh;
+  box-sizing: border-box;
+  width: calc(100vw - 160px);
 }
 
 .sidebar {
@@ -75,8 +78,10 @@ a span, button span {
   justify-content: space-between;
   height: 60px;
   z-index: 5;
+  width: 100%;
   padding: 0 8px;
   box-sizing: border-box;
+  background-color: #FFF8E1;;
 }
 
 .dpContainer {
@@ -93,11 +98,11 @@ a span, button span {
   display: flex;
   align-items: center;
   padding: 4px 2px;
-  background-color: #FFF8E1;;
   cursor: pointer;
 }
 
 button {
+  width: 170px;
   background: none;
   border: none;
   display: flex;

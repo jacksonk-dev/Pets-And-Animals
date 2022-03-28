@@ -10,11 +10,13 @@ import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth, getAuth } from '@angular/fire/auth';
 import { provideFirestore, getFirestore } from '@angular/fire/firestore';
+import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PetsComponent,
+    ComingSoonComponent,
   ],
   imports: [
     BrowserModule,

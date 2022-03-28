@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PetsComponent } from './pets/pets.component';
+import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 
 const routes: Routes = [
   { path: 'pets', component: PetsComponent },
-  { path: 'roast', component: PetsComponent },
-  { path: 'animals', component: PetsComponent },
-  { path: 'animal-feeds', component: PetsComponent },
-  { path: 'vet-services', component: PetsComponent },
-  { path: 'settings', component: PetsComponent }
+  { path: 'roast', component: ComingSoonComponent },
+  { path: 'animals', component: ComingSoonComponent },
+  { path: 'animal-feeds', component: ComingSoonComponent },
+  { path: 'vet-services', component: ComingSoonComponent },
+  { path: 'settings', component: ComingSoonComponent }
 ];
 
 @NgModule({
