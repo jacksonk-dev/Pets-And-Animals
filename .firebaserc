@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "pets-and-animals-52b20": {
+      "hosting": {
+        "Pets-And-Animals": [
+          "pets-and-animals-52b20"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "pets-and-animals-52b20"
+  }
+}

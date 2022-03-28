@@ -1,13 +1,21 @@
 <!-- Toolbar -->
 <div id="root">
   <div>
-    <div class="titleLogoContainer" routerLink="">
-      <img
-        width="40"
-        alt="Logo"
-        src="..\assets\images\logo.png"
-      />
-      <h1>Pets & Animals</h1>
+    <div class="appBar">
+      <a class="titleLogoContainer" routerLink="">
+        <img width="40" alt="Logo" src="..\assets\images\logo.png" />
+        <h1>Pets & Animals</h1>
+      </a>
+      <div *ngIf="!user.isLoggedIn" class="dpContainer">
+        <img *ngIf="!!user.photoURL" [src]="user.photoURL" />
+        <mat-icon *ngIf="!user.photoURL" aria-hidden="false" aria-label="User Acc">
+          person_outline
+        </mat-icon>
+      </div>
+      <button *ngIf="user.isLoggedIn" (click)="loginWithGoogle()">
+        <mat-icon aria-hidden="false" aria-label="Login Icon">login</mat-icon>
+        <span>Google Login</span>
+      </button>
     </div>
     <div class="sidebar">
       <div class="businessLinks">

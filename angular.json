@@ -104,6 +104,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "Pets-And-Animals:build:production",
+            "firebaseProject": "pets-and-animals-52b20",
+            "firebaseHostingSite": "pets-and-animals-52b20"
+          }
         }
       }
     }
