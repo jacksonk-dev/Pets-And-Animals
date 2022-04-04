@@ -15,6 +15,7 @@ export class AuthService {
   loginWithGoogle() {
     return signInWithPopup(this.auth, new GoogleAuthProvider())
       .then((res) => {
+        console.log(res)
         this.user = {
           ...res.user.providerData[0],
           isLoggedIn: true
