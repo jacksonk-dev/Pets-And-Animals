@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnChanges, OnInit } from '@angular/core';
 import { AuthService } from './services/auth.service';
 import { user } from './services/interfaces';
 
@@ -18,6 +18,9 @@ export class AppComponent implements OnInit {
   }
 
   loginWithGoogle() {
-    this.authService.loginWithGoogle();
+    this.authService.loginWithGoogle()
+      .then(() => {
+        this.user = this.authService.user;
+      })
   }
 }

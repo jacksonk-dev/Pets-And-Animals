@@ -7,7 +7,7 @@
         <h1>Pets & Animals</h1>
       </a>
       <div *ngIf="user.isLoggedIn" class="dpContainer">
-        <img *ngIf="!!user.photoURL" [src]="user.photoURL" />
+        <img *ngIf="!!user.photoURL" [src]="user.photoURL" class="dpImg" />
         <mat-icon *ngIf="!user.photoURL" aria-hidden="false" aria-label="User Acc">
           person_outline
         </mat-icon>

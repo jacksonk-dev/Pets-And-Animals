@@ -9,10 +9,11 @@ export class AuthService {
   user: user = {
     isLoggedIn: false,
   };
+
   constructor(private auth: Auth) { }
 
   loginWithGoogle() {
-    signInWithPopup(this.auth, new GoogleAuthProvider())
+    return signInWithPopup(this.auth, new GoogleAuthProvider())
       .then((res) => {
         this.user = {
           ...res.user.providerData[0],
