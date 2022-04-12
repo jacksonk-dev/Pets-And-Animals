@@ -1,5 +1,6 @@
-import { Component, OnChanges, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AuthService } from './services/auth.service';
+import { DataService } from './services/data.service';
 import { user } from './services/interfaces';
 
 @Component({
@@ -11,9 +12,10 @@ export class AppComponent implements OnInit {
   title = 'Pets-And-Animals';
   user: user = {};
 
-  constructor(private authService: AuthService) { }
+  constructor(private authService: AuthService, private dataService: DataService) { }
 
   ngOnInit() {
+    this.dataService.getPets();
     this.user = this.authService.user;
   }
 
