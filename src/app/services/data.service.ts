@@ -10,4 +10,8 @@ export class DataService {
   getPets() {
     this.http.get('/api').subscribe(data => console.log(data))
   }
+
+  addPet(data) {
+    this.http.post('/api/pets', data).subscribe()
+  }
 }

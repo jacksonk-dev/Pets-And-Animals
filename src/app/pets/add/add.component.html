@@ -1,8 +1,8 @@
 <div class="root">
-  <form>
+  <form [formGroup]="petsForm" (ngSubmit)="onSubmit()">
     <h3>Pet Details</h3>
-    <input placeholder="Type" />
-    <input placeholder="Description" />
+    <input placeholder="Type" formControlName="petType" />
+    <input placeholder="Description" formControlName="description" />
     <button type="submit">Add Pet</button>
   </form>
 </div>
