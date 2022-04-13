@@ -12,12 +12,14 @@ import { environment } from '../environments/environment';
 import { provideAuth, getAuth } from '@angular/fire/auth';
 import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { ComingSoonComponent } from './coming-soon/coming-soon.component';
+import { AddPetComponent } from './pets/add/add.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PetsComponent,
     ComingSoonComponent,
+    AddPetComponent,
   ],
   imports: [
     BrowserModule,
